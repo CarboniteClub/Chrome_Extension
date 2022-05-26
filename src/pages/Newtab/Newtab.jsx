@@ -4,26 +4,6 @@ import './Newtab.css';
 import './Newtab.scss';
 
 const Newtab = () => {
-  // const parseDomainFromUrl = function (e) {
-  //   var t, n;
-  //   return (n = document.createElement('a')), (n.href = e), (t = n.hostname);
-  // };
-  // async function getCurrentTab() {
-  //   let queryOptions = { active: true, currentWindow: true };
-  //   let [tab] = await chrome.tabs.query(queryOptions);
-  //   // console.log(parseDomainFromUrl(tab.url), 'aaaa');
-  //   return tab;
-  // }
-  // getCurrentTab();
-  // async function getCurrentTab() {
-  //   let queryOptions = { active: true, currentWindow: true };
-  //   let [tab] = await chrome.tabs.query(queryOptions);
-  //   console.log(tab);
-  // }
-  chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
-    console.log(tabs[0].url);
-  });
-
   return (
     <div className="App">
       <header className="App-header">

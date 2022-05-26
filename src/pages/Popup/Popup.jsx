@@ -7,23 +7,6 @@ let link = {
   tst: 0,
 };
 
-const async1SecTimer = async () => {
-  await new Promise((resolve) => setTimeout(resolve, 1000));
-  link['tst']++;
-  console.log(link['tst']);
-};
-
-(async () => {
-  try {
-    while (1) {
-      await async1SecTimer();
-    }
-  } catch (e) {
-    // Deal with the fact the chain failed
-  }
-  // `text` is not available here
-})();
-
 const Popup = () => {
   const [url, setUrl] = useState('');
   const [loading, setloading] = useState(true);

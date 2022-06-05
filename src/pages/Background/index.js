@@ -30,6 +30,34 @@ console.log('Put the background scripts here.');
 // }
 // // getCurrentTab();
 
-chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
-  console.log(tabs[0].url);
-});
+// chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
+//   console.log(tabs[0].url);
+// });
+
+// console.log(localStorage.getItem('link'));
+// let link;
+// if (localStorage.getItem('link') == null) {
+//   localStorage.setItem('link', 0);
+// } else {
+//   link = parseInt(localStorage.getItem('link'));
+// }
+// console.log(link);
+// localStorage.setItem('link', link + 1);
+// console.log('link', link);
+
+// let storage = new LocalStorage();
+// console.log('background2');
+// console.log(localStorage.getItem('link'));
+// let link;
+// if (localStorage.getItem('link') == null) {
+//   localStorage.setItem('link', 0);
+// } else {
+//   link = parseInt(localStorage.getItem('link'));
+//   console.log('parsint', link);
+//   localStorage.setItem('link', link + 1);
+// }
+// console.log(link);
+
+setInterval(function () {
+  console.log('hello');
+}, 1000);

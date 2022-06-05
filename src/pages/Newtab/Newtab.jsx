@@ -10,8 +10,8 @@ const Newtab = () => {
   useEffect(() => {
     chrome.storage.local.get(['data'], function (result) {
       console.log('Value currently is ' + JSON.stringify(result['data']));
-      setData(result.key);
-      return result.key;
+      setData(result.data);
+      return result.data;
     });
   }, []);
 
@@ -24,6 +24,7 @@ const Newtab = () => {
         </p>
         {/* <div>{link}</div> */}
         {JSON.stringify(data)}
+        aa
         <a
           className="App-link"
           href="https://reactjs.org"

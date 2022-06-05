@@ -61,3 +61,7 @@ console.log('Put the background scripts here.');
 setInterval(function () {
   console.log('hello');
 }, 1000);
+
+chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
+  console.log(tabs);
+});
